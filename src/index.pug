@@ -1,0 +1,30 @@
+extends layout
+
+block main-content
+    main.esab-home.d-flex.flex-column.flex-grow-1
+        .jumbotron(style="background-image: url('https://esabburnandearn.com/images/Burn&Earn%20Yellow_no%20box%20(1).jpg'); background-size: contain; background-repeat: no-repeat; background-position: center center;")
+            .container
+                .row 
+                    .col-12.col-lg-5.ml-auto
+                        .enter-code-container.text-center
+                            h1.text-uppercase Welcome to the esab reward center
+                            p.lead Enter your offer code and purchase date to begin your submission.
+                            form.offer-code-form.text-left(action="")
+                                .form-group
+                                    label(for="offer_code") Code
+                                    input.form-control#offer_code(type="text", placeholder='Offer Code (xxx-xxx)')
+                                .form-group
+                                    label(for="purchase_date") Purchase Date
+                                    input.form-control#purchase_date(type="text", placeholder='mm/dd/yyyy')
+                                .form-group.mb-0
+                                    button.btn.btn-secondary.btn-block(type="button")
+                                        | Continue >
+        section#submitted
+            .container 
+                .row.text-center 
+                    .col-12.col-md-6.mx-auto
+                        h2 Already Submitted?
+                        p You can check the status of your reward submission at any time. Please allow twenty-four (24) hours for our systems to update.
+                .row.text-center
+                    .col-12.col-md-6.mx-auto
+                        button.btn.btn-primary.status-btn.btn-block(type="button", href="TRACK_112735.aspx") Check Status

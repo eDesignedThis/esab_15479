@@ -1,0 +1,78 @@
+@import "_variabes.scss";
+
+body,
+html {
+  background: $white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+// Typography
+h1 {
+  color: $black;
+  font-size: 28px;
+}
+h2 {
+  color: $grey;
+}
+
+// Color Utilities
+.esab-yellow-bg {
+  background: $yellow;
+}
+
+// Components
+
+// Header
+
+nav a {
+  color: $header-links;
+  &:hover {
+    color: darken($header-links, 25%);
+  }
+}
+.fas.fa-bars {
+  border: 1px solid $yellow-dark;
+  border-radius: 100px;
+  height: 40px;
+  width: 40px;
+  background: $grey;
+  font-size: 1rem;
+  line-height: 40px;
+}
+
+.jumbotron {
+  border-radius: 0;
+}
+
+section {
+  margin: 3em 0;
+}
+
+.enter-code-container {
+  background: $white;
+  border-radius: 5px;
+  padding: 1.5em;
+  box-shadow: 0 13px 33px rgba(0, 0, 0, 0.35);
+}
+
+.btn-primary,
+.status-btn {
+  background: $yellow;
+  color: $black;
+  text-transform: uppercase;
+  border-color: $yellow;
+  &:hover {
+    background: $yellow-dark;
+    border-color: $yellow-dark;
+  }
+}
+
+// Media Queries
+.enter-code-container {
+  .form-control {
+    background: $input;
+    border: none;
+  }
+}

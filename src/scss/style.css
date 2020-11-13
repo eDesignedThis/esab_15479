@@ -1,0 +1,79 @@
+body,
+html {
+  background: #fff;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+h1 {
+  color: #000;
+  font-size: 28px;
+}
+
+h2 {
+  color: #8b8b8b;
+}
+
+.esab-yellow-bg {
+  background: #ffd333;
+}
+
+nav a {
+  color: #665000;
+}
+
+nav a:hover {
+  color: black;
+}
+
+.fas.fa-bars {
+  border: 1px solid #b38c00;
+  border-radius: 100px;
+  height: 40px;
+  width: 40px;
+  background: #8b8b8b;
+  font-size: 1rem;
+  line-height: 40px;
+}
+
+.jumbotron {
+  border-radius: 0;
+}
+
+section {
+  margin: 3em 0;
+}
+
+.enter-code-container {
+  background: #fff;
+  border-radius: 5px;
+  padding: 1.5em;
+  -webkit-box-shadow: 0 13px 33px rgba(0, 0, 0, 0.35);
+          box-shadow: 0 13px 33px rgba(0, 0, 0, 0.35);
+}
+
+.btn-primary,
+.status-btn {
+  background: #ffd333;
+  color: #000;
+  text-transform: uppercase;
+  border-color: #ffd333;
+}
+
+.btn-primary:hover,
+.status-btn:hover {
+  background: #b38c00;
+  border-color: #b38c00;
+}
+
+.enter-code-container .form-control {
+  background: #e4e4e4;
+  border: none;
+}
+/*# sourceMappingURL=style.css.map */
