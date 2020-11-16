@@ -26,15 +26,22 @@ h2 {
 
 // Buttons
 .btn-primary,
+.btn-secondary,
 .status-btn {
-  background: $yellow;
-  color: $black;
+  background: $black;
+  color: $yellow;
   text-transform: uppercase;
   border-color: $yellow;
   &:hover {
     background: $yellow-dark;
     border-color: $yellow-dark;
   }
+}
+
+.status-btn {
+  background: transparent;
+  border: 1px solid $black;
+  color: $black;
 }
 
 // Header
@@ -50,8 +57,9 @@ nav a {
   border-radius: 100px;
   height: 40px;
   width: 40px;
-  background: $grey;
+  background: $black;
   font-size: 1rem;
+  color: $yellow;
   line-height: 40px;
 }
 
@@ -74,14 +82,36 @@ section {
   box-shadow: 0 13px 33px rgba(0, 0, 0, 0.35);
 }
 
+.enter-code-container {
+  .form-control {
+    background: $input;
+    border: none;
+  }
+}
+
+.progress-amt {
+  color: $yellow-dark;
+}
+// Footer
+
 footer a {
   font-size: 0.8rem;
 }
 
 // Media Queries
-.enter-code-container {
-  .form-control {
-    background: $input;
-    border: none;
+@media (min-width: 1024px) {
+  .progress-amt {
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    border: 1px solid $yellow-dark;
+    text-align: center;
+    line-height: 55px;
+    background: $yellow-pale;
+  }
+}
+@media (min-width: 1400px) {
+  .jumbotron {
+    background-size: cover !important;
   }
 }

@@ -2,6 +2,7 @@ $white: #fff;
 $black: #000;
 $grey: #8b8b8b;
 $yellow: #ffd333;
+$yellow-pale: lighten($yellow, 25%);
 $yellow-dark: darken($yellow, 25%);
 $header-links: darken($yellow-dark, 15%);
 $input: lighten($grey, 35%);
