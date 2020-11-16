@@ -1,0 +1,42 @@
+extends layout
+
+block main-content
+    main.esab-contact.d-flex.flex-column.flex-grow-1
+        .container.my-auto
+            .row
+                .col-12.col-lg-5.mx-auto
+                        .track-rebate-container.text-center
+                            h1.my-3.text-uppercase Contact Us
+                            p For faster service track your rebate online.
+                            .row.mx-auto 
+                                .col-12
+                                    ul#myTab.nav.nav-tabs.border-bottom(role='tablist')
+                                        .row.w-100
+                                            .col-6.border-right
+                                                li.nav-item
+                                                    a#home-tab.nav-link.active(data-toggle='tab' href='#home' role='tab' aria-controls='home' aria-selected='true') 
+                                                        span.fas.fa-comment.d-block
+                                                        |   Chat
+                                            .col-6
+                                                li.nav-item
+                                                    a#profile-tab.nav-link(data-toggle='tab' href='#profile' role='tab' aria-controls='profile' aria-selected='false') 
+                                                        span.fas.fa-mobile-alt.d-block
+                                                        |   Phone
+                                    #myTabContent.tab-content
+                                        #home.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='home-tab') 
+                                            .row
+                                                .col-12.py-2
+                                                    p Web Chat Agents Available
+                                                    p.mb-0.font-weight-bold Monday - Friday
+                                                    p 8:30am - 5:30pm EST
+                                                    small.mb-0.d-block.text-center *Click on the blue chat icon in the bottom right corner to chat with an agent
+
+                                        #profile.tab-pane.fade(role='tabpanel' aria-labelledby='profile-tab')
+                                            .row
+                                                .col-12.py-2
+                                                    p.lead (800) 880-1834
+                                                    p Phone Agents Available
+                                                    p.mb-0.font-weight-bold Monday - Friday
+                                                    p 8:30am - 5:30pm EST
+                                                    small.mb-0.d-block.text-center *Click on the blue chat icon in the bottom right corner to chat with an agent
+                                  

@@ -16,10 +16,12 @@ block main-content
                                 .form-group
                                     label(for="purchase_date") Purchase Date
                                     input.form-control#purchase_date(type="text", placeholder='mm/dd/yyyy')
-                                .form-group.mb-0
-                                    button.btn.btn-secondary.btn-block(type="button")
+                                .form-group
+                                    button#btn_offer_code.btn.esab-btn-primary.btn-block(type="button")
                                         | Continue 
                                         span.fas.fa-arrow-circle-right
+                                .form-group.mb-0
+                                    span#popError.error
         section#submitted
             .container 
                 .row.text-center 
@@ -28,5 +30,5 @@ block main-content
                         p You can check the status of your reward submission at any time. Please allow twenty-four (24) hours for our systems to update.
                 .row.text-center
                     .col-12.col-md-6.mx-auto
-                        button.btn.btn-primary.status-btn.btn-block(type="button", href="TRACK_112735.aspx")
+                        button.btn.status-btn.btn-block(type="button", href="TRACK_112735.aspx")
                             | Check Status

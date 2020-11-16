@@ -11,39 +11,57 @@ html {
           flex-direction: column;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #000;
-  font-size: 28px;
 }
 
-h2 {
-  color: #8b8b8b;
+h1 {
+  font-size: 28px;
 }
 
 .esab-yellow-bg {
   background: #ffd333;
 }
 
-.btn-primary,
-.btn-secondary,
+.esab-dark {
+  background: #000;
+  color: #fff;
+}
+
+header {
+  border-bottom: 2px solid #000;
+}
+
+.esab-btn-primary,
+.esab-btn-secondary,
 .status-btn {
   background: #000;
   color: #ffd333;
   text-transform: uppercase;
-  border-color: #ffd333;
+  border: none;
+  border-radius: 2px;
 }
 
-.btn-primary:hover,
-.btn-secondary:hover,
+.esab-btn-primary:hover,
+.esab-btn-secondary:hover,
 .status-btn:hover {
-  background: #b38c00;
-  border-color: #b38c00;
+  background: #ffd333;
+  color: #000;
 }
 
 .status-btn {
-  background: transparent;
-  border: 1px solid #000;
+  background: #b7c9d3;
+  border: none;
   color: #000;
+}
+
+.status-btn:hover {
+  background: #688ea3;
 }
 
 nav a {
@@ -65,6 +83,14 @@ nav a:hover {
   line-height: 40px;
 }
 
+main {
+  background: #dae2e6;
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #dae2e6), color-stop(100%, white));
+  background: -webkit-gradient(linear, left top, left bottom, from(#dae2e6), to(white));
+  background: linear-gradient(to bottom, #dae2e6 0%, white 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dae2e6', endColorstr='#ffffff', GradientType=0 );
+}
+
 .jumbotron {
   border-radius: 0;
 }
@@ -73,7 +99,12 @@ section {
   margin: 3em 0;
 }
 
-.enter-code-container {
+input.form-control {
+  border-radius: 2px;
+}
+
+.enter-code-container,
+.track-rebate-container {
   background: #fff;
   border-radius: 5px;
   padding: 1.5em;
@@ -88,6 +119,21 @@ section {
 
 .progress-amt {
   color: #b38c00;
+}
+
+.nav-tabs .nav-links {
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: 1px solid #000;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link:hover {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #000;
 }
 
 footer a {

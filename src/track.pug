@@ -1,0 +1,16 @@
+extends layout
+
+block main-content
+    main.esab-track.d-flex.flex-column.flex-grow-1.bg-light
+        .container.my-auto
+            .row
+                .col-12.col-lg-5.mx-auto
+                        .track-rebate-container.text-center
+                            h1.my-3.text-uppercase Track A Rebate
+                            form#esab-track-form.text-left
+                                .form-group
+                                    label.psg-tracking-number-label(for="txtTrackingNumber") Search By Tracking Number
+                                    input#txtTrackingNumber.form-control(name="_ctl0:txtTrackingNumber" placeholder="Enter Tracking Number")
+                                .form-group
+                                    button.btn.esab-btn-primary.btn-block(type="button") Track   
+                                        span.fas.fa-arrow-circle-right
